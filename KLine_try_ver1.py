@@ -7,7 +7,7 @@ import plotly.graph_objs as go
 import plotly.plotly as py
 import plotly
 
-plotly.tools.set_credentials_file(username='N3ov', api_key='dC1ZcLLdu0xgNzwjguyI')
+plotly.tools.set_credentials_file(username='', api_key='')
 
 def getData(code, date):
     response = requests.get('http://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=%d&stockNo=%d' % (date, code))
