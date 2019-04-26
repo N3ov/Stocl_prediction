@@ -14,7 +14,7 @@ def getData(code, date):
     return json.loads(response.text)
 
 def drawPlot(data):
-    df = pd.DataFrame(data)
+    df = pd.DataFrame(data['data'])
     df.columns = [
         'date',
         'shares',
